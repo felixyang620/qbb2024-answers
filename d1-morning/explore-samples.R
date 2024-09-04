@@ -38,7 +38,13 @@ df %>%
   group_by(SMTSD) %>%
   summarise(count=n()) %>%
   arrange(desc(count))
-# Whole Blood and Muscle-Skeletal have the most samples, skin-Not Sun Exposed (Suprapubic) has the least samples.
+# Whole Blood and Muscle-Skeletal have the most samples.
+
+df %>%
+  group_by(SMTSD) %>%
+  summarise(count=n()) %>%
+  arrange((count))
+# Kidney - Medulla and Cervix - Ectocervix have the least samples, with 4 and 9 respectively. 
 
 
 # Q6: For subject GTEX-NPJ8, Which tissue has the most samples? For that tissue, what is different between the samples?
