@@ -24,7 +24,7 @@
 
 ## GENCODE Answer 2
 - Because the grep pseudogene gene.gtf is looking for all lines with "pseudogene" words existing, without ruling out it being part of another word, such as "overlap_pseudogene". In this case, some other unwanted lines are included in the final result. We need to grep for lines with exact words matching "pseudogene". 
-- grep -w "gene_type 'pseudogene'" genes.gts
+- `grep -w "gene_type 'pseudogene'" genes.gts`
 
 
 ## GENCODE Answer 3
