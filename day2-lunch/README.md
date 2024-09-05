@@ -19,6 +19,8 @@
 ## GENCODE Answer 1
 - `grep -w -e "IG...gene" -e "IG....gene" genes.gtf | cut -f 1 | sort | uniq -c | sort`
 - The distribution of IG genes is as following: 1 on chr 21, 6 on chr16, 16 on chr15, 48 on chr22, 52 on chr2, and 91 on chr14. 
+
+-`grep -w -e "IG.pseudogene" -e "IG...pseudogene" genes.gtf | cut -f 1 | sort | uniq -c | sort`
 - The distribution of IG pseudogenes is as following: 1 on chr1, 1 on chr10, 1 on chr18, 1 on chr8, 5 on chr9, 6 on chr15, 8 on - chr16, 45 on chr2, 48 on chr22, 84 on chr14. 
 - IG genes are expressed on less chromosomes than IG pseudogenes, there are also more IG pseudogenes than IG genes. 
 
