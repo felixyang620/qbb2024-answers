@@ -49,8 +49,8 @@ expression = numpy.array(expression, dtype=float)
 # print(gene_names)
 # print(expression)
 
-#4 find the mean of expression across the tissues
-row_mean = numpy.mean(expression, axis=1)
+#4 find the mean of expression across the tissues for the first 10 genes
+row_mean = numpy.mean(expression[:10,:], axis=1)
 print(row_mean)
 
 #5 compare median and mean for the whole data set
@@ -87,8 +87,7 @@ print(diff_array)
 Number_of_specific_genes = numpy.sum(diff_array >= 10)
 print(Number_of_specific_genes)
 
-
-#9 
+# There are 33 genes with a difference between highest and second highest expression more than 10. 
 
 
 
