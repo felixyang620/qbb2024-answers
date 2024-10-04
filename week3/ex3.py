@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
 import sys
-import numpy
-import pandas
 
 # I used less -S in terminal to have a look at the actual file format and the position of the columns to be used later in this script.
 # Create empty array for both AF and DP later to be appended by the extracted info later
