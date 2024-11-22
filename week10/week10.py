@@ -215,4 +215,4 @@ for i in range(8):
             Gene = "SRSF1"
         print(Gene, nascent_signal, PCNA_signal, log2ratio, sep = "\t")
 
-#./week10.py > nuclei_signal.txt
+#./week10.py > plot_data.txt
